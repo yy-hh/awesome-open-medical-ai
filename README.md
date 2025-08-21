@@ -49,4 +49,5 @@ MedGemma 是 Gemma 3 变体的集合，经过专门训练以提升医疗文本�
 提供了一个线上体验地址：https://dr7.ai/medgemma
 - 4B 多模态版本：https://dr7.ai/medgemma-4b
 - 27B 纯文本版本：https://dr7.ai/medgemma-27b
+
 免费的基本都排不上队，建议本地部署后使用。
