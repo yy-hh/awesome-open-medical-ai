@@ -58,7 +58,9 @@ MedGemma 是 Gemma 3 变体的集合，经过专门训练以提升医疗文本�
 一种实时目标检测系统，由Joseph Redmon等人在2015年首次提出。YOLO的设计理念是将目标检测问题视为一个回归问题，从输入图像直接预测目标的边界框和类别概率。YOLO系列模型因其高效的实时性能和较高的检测精度而广泛应用于各种计算机视觉任务中。YOLO系列模型因其高效的实时检测能力和不断提升的检测精度，已成为计算机视觉领域目标检测的一个重要基准，并被广泛应用于自动驾驶、监控系统、智能设备等多个领域。
 - 项目仓库：
 [yolo-v8]（https://github.com/DataXujing/YOLOv8）
+
 [yolo-v9]（https://github.com/WongKinYiu/yolov9）
+
 [yolo-v13](https://github.com/iMoonLab/yolov13)
 
 ### 2. mmdetection
