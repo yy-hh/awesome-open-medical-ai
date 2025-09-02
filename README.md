@@ -53,4 +53,42 @@ MedGemma 是 Gemma 3 变体的集合，经过专门训练以提升医疗文本�
 免费的基本都排不上队，建议本地部署后使用。
 主要测试了对影像的诊断能力，感觉效果一般，不如GPT5
 # 视觉算法
+## 目标检测
+### 1. YOLO（You Only Look Once）
+一种实时目标检测系统，由Joseph Redmon等人在2015年首次提出。YOLO的设计理念是将目标检测问题视为一个回归问题，从输入图像直接预测目标的边界框和类别概率。YOLO系列模型因其高效的实时性能和较高的检测精度而广泛应用于各种计算机视觉任务中。YOLO系列模型因其高效的实时检测能力和不断提升的检测精度，已成为计算机视觉领域目标检测的一个重要基准，并被广泛应用于自动驾驶、监控系统、智能设备等多个领域。
+- 项目仓库：
+[yolo-v8]（https://github.com/DataXujing/YOLOv8）
+[yolo-v9]（https://github.com/WongKinYiu/yolov9）
+[yolo-v13](https://github.com/iMoonLab/yolov13)
+
+### 2. mmdetection
+MMDetection 是一个开源的、基于 PyTorch 的目标检测工具箱，由香港中文大学的多媒体实验（Multimedia Laboratory, CUHK）开发。它是 OpenMMLab 项目的一部分，旨在为研究人员和工程师提供一个灵活、易用且高效的目标检测框架。包含yolo，maskrcnn，faster-rcnn等多种检测算法。
+- 项目仓库：
+[mmdetection](https://github.com/open-mmlab/mmdetection)
+
+## 目标分割
+### 1. UNet
+U-Net 是一种用于生物医学图像分割的卷积神经网络（CNN）架构，由 Olaf Ronneberger 等人在 2015 年提出。它因其在医学图像分割任务中的卓越表现而广受欢迎。
+- 项目仓库：
+[Unet-pytorch](https://github.com/milesial/Pytorch-UNet)
+### 2.nnUNet
+nnU-Net（no-new-Net）是一个自动化的神经网络框架，专门用于医学图像分割任务。它由Fabian Isensee等人在2020年提出，旨在通过自动化的方式优化神经网络架构和训练流程，以在不同的医学图像分割任务中实现高性能。nnU-Net通过自动化的方式简化了医学图像分割模型的开发流程，大大提高了开发效率和模型性能，是医学影像分析领域的重要工具。
+- 项目仓库：[nnUNet](https://github.com/MIC-DKFZ/nnUNet) 
+
+### 3. unet衍生变种
+resunet
+denseunet
+... 
+
+## 超分辨率
+### 1. srcnn
+SRCNN（Super-Resolution Convolutional Neural Network）是最早的基于深度学习的图像超分辨率方法之一，由 Dong 等人在 2014 年提出。SRCNN 的设计简单而有效，它引入了卷积神经网络（CNN）来解决图像超分辨率问题。
+- 项目仓库：[srcnn](https://github.com/yjn870/SRCNN-pytorch) 
+### 2. srgan
+SRGAN（Super-Resolution Generative Adversarial Network）是一种用于图像超分辨率的生成对抗网络（GAN）方法，由 Ledig 等人在 2017 年提出。SRGAN 是通过结合生成对抗网络的思想，生成更逼真和细节丰富的高分辨率图像的一种方法。在实际训练过程中，判别器损失和生成器损失非常难调，很容易崩溃。
+- 项目仓库：[srgan](https://github.com/leftthomas/SRGAN) 
+### 3. sr3
+SR3（Super-Resolution via Repeated Refinement）是一种由 OpenAI 提出的基于扩散模型的图像超分辨率方法。与传统的生成对抗网络（GAN）不同，SR3 利用扩散过程来逐步提高图像的分辨率。
+- 项目仓库：[sr3](https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement) 
+
 # LLM算法
