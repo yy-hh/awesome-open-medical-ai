@@ -8,8 +8,7 @@
 - 支持用户自定义分析参数，满足不同用户的需求
 - 支持批量分析，用户可以上传多张X光片，获取批量分析结果
 ### 3. 项目地址
-- 项目仓库：[XrayGPT](https://github.com/yourusername/XrayGPT)
-- 项目文档：[XrayGPT文档](https://yourusername.github.io/XrayGPT/)
+- 项目仓库：[XrayGPT](https://github.com/mbzuai-oryx/XrayGPT)
 ### 4. 使用体验
 感觉项目已经无人维护，项目部署存在依赖冲突，项目文档也无法访问
 
@@ -94,4 +93,5 @@ labels = ["No Obvious Breast Nodule", "Obvious Breast Nodule Present","Unclear/I
 ```
 我实测了在超声模态下，乳腺结节检测，甲状腺结节检测发准确率在0.7左右，但是概率值普遍在0.5附近，估计是这个模型包含的超声图像训练数据不对，但是确实可以作为早期项目启动用来做预标注的工具使用。
 # 视觉算法
-# LLM算法
+
+# LLM模型
