@@ -95,3 +95,114 @@ labels = ["No Obvious Breast Nodule", "Obvious Breast Nodule Present","Unclear/I
 # 视觉算法
 
 # LLM模型
+## Med-PaLM
+### 1. 项目介绍
+Med-PaLM 是 Google 开发的医疗领域大模型，旨在通过生成式 AI 技术革新医学知识处理、回答复杂医学问题，并提供准确、安全、公平的医疗健康解决方案。最新版本为 Med-PaLM 2。
+
+### 2. 主要功能
+- 处理多种医疗模态数据（文本、影像、基因组等）
+- 解答医学考试题目和临床问题
+- 支持医学影像分析和报告生成
+- 提供多语言医疗问答能力
+
+### 3. 项目地址
+- GitHub 仓库：https://github.com/kyegomez/Med-PaLM
+
+## DISC-MedLLM
+### 1. 项目介绍
+DISC-MedLLM 是一个由复旦大学 DISC 实验室开发的医疗健康对话大模型，专门针对真实医患对话场景优化，能够进行疾病问诊和治疗方案咨询。
+
+### 2. 主要功能
+- 提供疾病问诊和治疗方案咨询服务
+- 支持多轮医疗对话与知识图谱问答
+- 对齐医疗场景下的人类偏好，提供更贴近真实医生风格的回复
+
+### 3. 项目地址
+- 项目仓库：https://github.com/FudanDISC/DISC-MedLLM
+- Hugging Face 模型权重：https://huggingface.co/Flmc/DISC-MedLLM
+
+### 4. 使用体验
+- 西医问答准确性较好，中医问答准确性较低
+- 指令遵循能力一般，建议结合微调部署优化使用体验
+
+## 扁鹊大模型 
+### 1. 项目介绍
+扁鹊（BianQue）是由华南理工大学广东省数字孪生人重点实验室开发的中文医疗健康大模型，专注于提升多轮问询与健康建议能力。包含 BianQue-1.0（基于 ChatYuan-large-v2）和 BianQue-2.0（基于 ChatGLM-6B）两个版本。
+
+### 2. 主要功能
+- 支持医疗健康多轮对话与问询（CoQ, Chain of Questioning）
+- 提供疾病诊断建议和健康知识问答
+- 支持药品说明书查询和医学知识检索
+
+### 3. 项目地址
+- 项目仓库：https://github.com/scutcyr/BianQue
+
+### 4. 使用体验
+- 模型容易出现幻觉现象，指令遵循能力较弱
+- 问答准确性一般，建议谨慎参考其医疗建议
+- 对指令理解能力较弱。
+比如：
+问：扁鹊你好，你的基座模型是什么？
+答：你好我是郑州中心医院整形外科的刘珍君医生。根据您的描述,建议您上传一下牙齿的照片,我的基座模型是牙齿。
+
+## 明医 (MING)：中文医疗问诊大模型
+
+### 1. 项目介绍
+明医 (MING) 是上海交通大学与上海人工智能实验室联合开发的中文医疗问诊大模型，基于 Qwen1.5 和 Bloom 系列模型进行医疗指令微调，支持医疗问答和多轮智能问诊功能。
+
+### 2. 主要功能
+- 医疗问答：对医疗问题进行解答和案例分析
+- 智能问诊：通过多轮对话进行问诊并给出诊断建议
+- 支持多种参数规模的模型版本（1.8B至14B）
+
+### 3. 项目地址
+- 项目仓库：https://github.com/MediaBrain-SJTU/MING
+
+- Hugging Face 模型：
+1. MING-7B：https://huggingface.co/BlueZeros/MING-7B
+2. MING-1.8B：https://huggingface.co/BlueZeros/MING-1.8B
+3. MING-MOE 系列：https://huggingface.co/BlueZeros/MING-MOE-1.8B
+## 本草 （原名华佗）大模型
+### 1. 项目介绍
+Huatuo-Llama-Med-Chinese（本草）是哈尔滨工业大学开发的基于LLaMA、Bloom等模型的中文医疗大语言模型，通过医学知识库和文献指令微调，专门针对中文医疗问答场景优化。
+
+### 2. 主要功能
+- 中文医疗问答和诊断建议
+- 支持多轮医疗对话
+- 基于医学知识库的可靠回复生成
+- 支持肝癌等特定疾病的专业咨询
+
+### 3. 项目地址
+- 项目仓库：https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese
+- 模型下载：
+1. 支持百度网盘下载（见项目文档）
+2. Hugging Face：https://huggingface.co/lovepon/lora-bloom-med-bloom
+
+### 4. 使用体验
+- 需本地部署，建议显存≥24GB（3090/4090以上）
+- 提供推理脚本和测试用例
+- 模型效果优于原版LLaMA和Alpaca
+## 基于 DoctorGLM
+### 1. 项目介绍
+DoctorGLM 是基于 ChatGLM-6B 开发的中文医疗问诊模型，通过医疗对话数据进行指令微调，专门针对中文医疗问答场景优化，支持多轮问诊对话。
+
+### 2. 主要功能
+中文医疗问答和诊断建议
+
+支持多轮医疗对话
+
+提供 P-Tuning 和 LoRA 两种微调方式
+
+支持 INT4/INT8 量化部署，降低显存需求
+
+### 3. 项目地址
+- 项目仓库：https://github.com/xionghonglin/DoctorGLM 
+- 模型下载：提供 INT4（https://pan.baidu.com/s/1nHQ1EQ2OBuWCyBZKBnBHYw?pwd=x6l4） 和 INT8 量化版本（https://pan.baidu.com/s/1v2hWl1dPnh8xoJzxtpbugw?pwd=y4hu）
+- 基模型：ChatGLM-6B
+
+### 4. 使用体验
+- 需本地部署，FP16版本需≥13G显存
+- INT4量化版本需约6G显存，INT8需约8G显存
+- 提供 Gradio 网页演示界面
+- 量化版本性能仍有待优化
+
